@@ -26,6 +26,11 @@ a {
     a {
       font-size: 10px !important; } }
 
+.main .boton_rx7, .main .boton_wrx, .main .boton_lanEvo {
+  width: 50%;
+  height: 40px;
+  text-align: center; }
+
 body {
   background-color: #efefef; }
 
@@ -241,12 +246,25 @@ body {
 
 .main {
   grid-area: main; }
-  .main .colorBoton {
+  .main .boton_rx7 {
     background-color: #fc4c02;
-    transition: 0.3s all ease; }
-    .main .colorBoton:hover {
+    color: #1f2a44; }
+    .main .boton_rx7:hover {
       background-color: #1f2a44;
       color: #fc4c02; }
+  .main .boton_wrx {
+    background-color: #1f2a44;
+    color: #fc4c02; }
+    .main .boton_wrx:hover {
+      background-color: #fc4c02;
+      color: #1f2a44; }
+  .main .boton_lanEvo {
+    background-color: cadetblue;
+    color: crimson;
+    width: 65%; }
+    .main .boton_lanEvo:hover {
+      background-color: crimson;
+      color: cadetblue; }
   .main .disable {
     display: none; }
     @media (max-width: 768px) {

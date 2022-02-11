@@ -1,0 +1,158 @@
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "headerPrincipal headerPrincipal headerPrincipal"
+    "headerImagen headerImagen headerImagen"
+    ;
+    .headerPrincipal{
+        grid-area: headerPrincipal;
+        display: flex;
+        width: 100%;
+        height: 115px;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 2px solid $naranja;
+        position: absolute;
+        @media(max-width:768px){
+            background-color: hsla(0,0%,100%,.4);
+        }
+        
+        .logo{
+            height: 100px;
+            @media(max-width:768px){
+                height: 80px;
+            }
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            @media(max-width:425px){
+                display: none;
+            }
+            li{
+                list-style: none;
+                padding: 15px 20px;
+                transition: all ease 0.15s;
+                &:hover{
+                    border-bottom: 5px solid $naranja;
+                }
+                &:hover a{
+                    color: $naranja;
+                }
+                @media(max-width:1024px){
+                    list-style: none;
+                    padding: 0 7.5px !important;
+                }
+                @media(max-width:768px){
+                    padding: 0 5px !important;
+                }
+            }
+        }
+
+        .headerInfo{
+            display: flex;
+            flex-direction: column;
+
+            .infoCelular{
+                padding-bottom: 7.5px;
+            }
+
+            .infoLugar{
+                padding-top: 7.5px;
+            }
+
+            .fas{
+                color: $naranja;
+                font-size: 20px;
+            }  
+            @media(max-width:768px){
+                display: none;
+            }      
+        }  
+    }
+    
+    .headerImagen{
+        grid-area: headerImagen;
+        background-image: url(../images/background_image.jpg);
+        background-position: center;
+        background-size: cover;
+        @media(max-width:768px){
+            //Cambiar imagen
+            background-image: url(../images/background_image6.jpg);
+            background-position: 75%;
+        }
+        @media(max-width:768px){
+            background-position: 69%;
+        }
+        @media(max-width:375px){
+            background-position: 65%;
+        }
+        @media(max-width:320px){
+            background-position: 62%;
+        }
+
+        .textoPrincipal{
+            background-color: hsla(0,0%,100%,.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 800px;
+            height: 250px;
+            position: relative;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-left: 4px solid $naranja;
+            color: $naranja;
+            @media(max-width:768px){
+                width: 100%;
+                height: 250px;
+                position: relative;
+                top: 75%;
+                left: 50%;
+                background-color: hsla(0,0%,100%,.2);
+                color: $azul;
+                border-right: 4px solid $naranja;
+            }
+
+            button{
+                background: $azul;
+                color: $naranja;
+                border: 0;
+                border-radius: 20px;
+                width: 20%;
+                height: 48px;
+                font-size: 18px;
+                font-weight: bold;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    background-color: $naranja;
+                    color: $azul;
+                    width: 70%;
+                    @media(max-width:375px){
+                        background-color: $azul;
+                        color:  $naranja;
+                        width: 70%;
+                    }
+                }
+                @media(max-width:425px){
+                    background-color: $azul;
+                    color: $naranja;
+                    width: 70%;
+                }
+                @media(max-width:375px){
+                    background-color: $naranja;
+                    color: $azul;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+

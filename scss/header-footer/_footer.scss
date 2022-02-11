@@ -1,0 +1,45 @@
+.footer{
+    grid-area: footer;
+    background-color: $naranja;
+    color: $azul;
+
+    .iconosRedes{
+        height: 75px;
+        display: flex;
+        align-items: center;
+    }
+
+    .barraColor{
+        background-color: $azul;
+        height: 6px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .enlaces{
+        height: 75px;
+
+        li{
+            list-style: none;
+            padding: 0 20px;
+            @media(max-width:425px){
+                list-style: none;
+                padding: 0 18px;
+            }
+            @media(max-width:375px){
+                list-style: none;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .copyright{
+        width: 100%;
+        background-color: $azul;
+        color: $naranja;
+        @media(max-width:320px){
+            text-align: center;
+        }
+    }
+    
+}

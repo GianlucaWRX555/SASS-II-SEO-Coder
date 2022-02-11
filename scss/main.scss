@@ -1,0 +1,28 @@
+//En el main.scss debo poner todos los @import, por buena practica
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+//VARIABLES - Siempre van primero
+@import './utilidades/colores';
+@import './utilidades/links';
+
+//IMPORTACIONES
+@import './secciones/index';
+@import './grid/gridindex';
+@import './header-footer/header-index';
+@import './headerSecundario/headerSec';
+@import './main/main_index';
+@import './informacion/informacion';
+@import './header-footer/footer';
+@import './mediaQuerys/1024';
+@import './mediaQuerys/425';
+@import './secciones/contacto';
+@import './utilidades/botones';

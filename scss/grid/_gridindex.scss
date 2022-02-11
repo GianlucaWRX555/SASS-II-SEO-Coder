@@ -1,0 +1,26 @@
+/* Configuracion Primer GRID */
+.contenedorGrid{
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
+    grid-template-rows: 100vh 75px 700px 0.5fr auto;
+    grid-template-areas: 
+    "header header header header header"
+    "headerSec headerSec headerSec headerSec headerSec"
+    ". main main main ."
+    ". informacion informacion informacion ."
+    "footer footer footer footer footer"
+    ;
+    @media(max-width:768px){
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
+        grid-template-rows: 100vh 75px auto 0.5fr auto;
+    }
+    @media(max-width:425px){
+        grid-template-areas: 
+        "header header header header header"
+        "headerSec headerSec headerSec headerSec headerSec"
+        ". main main main ."
+        "informacion informacion informacion informacion informacion"
+        "footer footer footer footer footer"
+        ;
+    }
+}

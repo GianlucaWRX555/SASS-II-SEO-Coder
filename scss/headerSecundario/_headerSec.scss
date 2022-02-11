@@ -1,0 +1,99 @@
+.headerSec{
+    grid-area: headerSec;
+    background-color: $naranja !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        @media(max-width:320px){
+            justify-content: space-between;
+        }
+
+        li{
+            list-style: none;
+            padding: 24px 45px;
+            transition: all 0.15s ease;
+
+            &:hover{
+                background-color: $azul;
+            }
+
+            &:hover a{
+                color: $naranja;
+            }
+            @media(max-width:1024px){
+                padding: 24px 14px !important;
+            }
+            @media(max-width:768px){
+                padding: 26px 6px !important;
+            }
+            @media(max-width:425px){
+                padding: 25px 6px !important;
+            }
+            @media(max-width:375px){
+                padding: 26px 2px;
+            }
+            @media(max-width:320px){
+                padding: 26px 2px;
+            }
+        }
+    }
+    @media(max-width:425px){
+        .bienvenidos {
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.headerSec{
+
+
+    grid-area: headerSec;
+    background-color: var(--Naranja);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.headerSec ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headerSec li{
+    list-style: none;
+    padding: 24px 45px;
+    transition: all 0.15s ease;
+}
+
+.headerSec li:hover{
+    background-color: var(--Azul);
+}
+
+.headerSec li:hover a{
+    color: var(--Naranja);
+}

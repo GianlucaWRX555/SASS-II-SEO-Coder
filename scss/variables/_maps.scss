@@ -1,0 +1,15 @@
+//Declaracion de Mapa
+$marcaCard:(
+    mazda:red,
+    subie:$azul,
+    mitsubishi:cadetblue,
+);
+
+//Bucle
+@each $marca, $color in $marcaCard {
+    .#{$marca}{
+        color: $color;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
